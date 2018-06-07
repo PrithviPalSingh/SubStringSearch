@@ -43,7 +43,7 @@ namespace SubStringSearch
                 }
                 else
                 {
-                    i -= j;
+                    i -= j; // Backup is happening here
                     j = 0;
                 }
             }

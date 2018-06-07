@@ -21,7 +21,14 @@ namespace SubStringSearch
             if (stIndex == "AABBCCDD".Length)
                 Console.WriteLine("Not found");
             else
-                Console.WriteLine($"Start Index: {stIndex} <<>> End Index: {startIndex + "CCD".Length}");
+                Console.WriteLine($"Start Index: {stIndex} <<>> End Index: {stIndex + "CCD".Length}");
+
+            KnuthMorrisPatt kmp = new KnuthMorrisPatt("CCD");
+            int kmpStIndex = kmp.Search("AABBCCDD");
+            if (kmpStIndex == "AABBCCDD".Length)
+                Console.WriteLine("Not found");
+            else
+                Console.WriteLine($"Start Index: {kmpStIndex} <<>> End Index: {kmpStIndex + "CCD".Length}");
 
             Console.Read();
         }
