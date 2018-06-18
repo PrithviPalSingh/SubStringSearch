@@ -42,10 +42,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BoyreMooreSearchAlgo.cs" />
     <Compile Include="BruteForceWay.cs" />
     <Compile Include="KnuthMorrisPatt.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RabinKarp.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -30,6 +30,20 @@ namespace SubStringSearch
             else
                 Console.WriteLine($"Start Index: {kmpStIndex} <<>> End Index: {kmpStIndex + "CCD".Length}");
 
+            BoyreMooreSearchAlgo bm = new BoyreMooreSearchAlgo();
+            int bmIndex = bm.Search("AABBCCDD", "CCD");
+            if (bmIndex == "AABBCCDD".Length)
+                Console.WriteLine("Not found");
+            else
+                Console.WriteLine($"Start Index: {bmIndex} <<>> End Index: {bmIndex + "CCD".Length}");
+
+            RabinKarp rk = new RabinKarp("CCD");
+            int rkIndex = rk.Search("AABBCCDD");
+            if (rkIndex == "AABBCCDD".Length)
+                Console.WriteLine("Not found");
+            else
+                Console.WriteLine($"Start Index: {rkIndex} <<>> End Index: {rkIndex + "CCD".Length}");
+
             Console.Read();
         }
     }
