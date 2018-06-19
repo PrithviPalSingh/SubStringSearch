@@ -44,7 +44,10 @@
   <ItemGroup>
     <Compile Include="BoyreMooreSearchAlgo.cs" />
     <Compile Include="BruteForceWay.cs" />
+    <Compile Include="DataStructure\DiaGraphAPI.cs" />
+    <Compile Include="DataStructure\DirectedDFS.cs" />
     <Compile Include="KnuthMorrisPatt.cs" />
+    <Compile Include="NFA.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RabinKarp.cs" />
@@ -52,5 +55,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
